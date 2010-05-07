@@ -1,0 +1,17 @@
+= EvenFaster88mph
+== 88mph time tracker's MacRuby client
+
+== Description
+This app intends to save some time using the 88mph time tracker (belighted/88mph)
+
+== Features
+Currently only support:
+* viewing projects
+* updating current project
+* settings for user/pass
+
+== REQUIREMENTS:
+* MacRuby 0.5-0.6: http://www.macruby.org/
+
+== Author
+* Benoit Daloze - eregon
