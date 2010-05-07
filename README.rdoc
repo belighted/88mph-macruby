@@ -10,8 +10,11 @@ Currently only support:
 * updating current project
 * settings for user/pass
 
-== REQUIREMENTS:
+== Requirements:
 * MacRuby 0.5-0.6: http://www.macruby.org
+
+== Install
+Build it with XCode or go in the Downloads section
 
 == Author
 * Benoit Daloze - eregon
