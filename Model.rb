@@ -10,8 +10,8 @@ class NSString
 end
 
 class Model
-  LIST_PROJECTS_URI = "http://localhost:3000/timeline/edit.json"
-  UPDATE_PROJECT_URI = "http://localhost:3000/timeline.json"
+  LIST_PROJECTS_URI = "http://belighted-88mph.heroku.com/timeline/edit.json"
+  UPDATE_PROJECT_URI = "http://belighted-88mph.heroku.com/timeline.json"
   attr_writer :user
   attr_writer :pass
 
