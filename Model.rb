@@ -15,8 +15,9 @@ class Model
   attr_writer :user
   attr_writer :pass
 
-  def initialize(user = "eregontp@gmail.com", pass = "azerty")
-    @user, @pass = user, pass
+  def initialize(user = "", pass = "")
+	@user = NSUserDefaults.standardUserDefaults['user']
+	@pass = NSUserDefaults.standardUserDefaults['pass']
   end
 
   def projects
@@ -25,8 +26,12 @@ class Model
     request = Net::HTTP::Get.new(uri.request_uri)
     request.basic_auth(@user, @pass)
     response = http.request(request)
-
-    JSON.parse(response.body)
+	if response.code != "200"
+	  puts "Oops, got a suspicious response code: #{response.code}"
+	  {}
+	else
+	  JSON.parse(response.body)
+	end
   end
   
   def update_project(name)

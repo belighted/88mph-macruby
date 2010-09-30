@@ -7,13 +7,21 @@ class PreferencesController < NSWindowController
 	
 	def awakeFromNib
 		puts "#{self.class} awoken!"
+		@user_input.stringValue = NSUserDefaults.standardUserDefaults['user']
+		@pass_input.stringValue = NSUserDefaults.standardUserDefaults['pass']
 	end
 	
 	def	ok_button_clicked(sender)
 		App.model.user = @user_input.stringValue
 		App.model.pass =  @pass_input.stringValue
-		puts "Settings saved !"
-		@window.close
+		NSUserDefaults.standardUserDefaults['user'] = @user_input.stringValue
+		NSUserDefaults.standardUserDefaults['pass'] = @pass_input.stringValue
+		NSUserDefaults.standardUserDefaults.synchronize
+		puts "Settings saved"
+		alert = NSAlert.new
+		alert.setMessageText("You should restart the application for the changes to take effect. This sucks, I know.") # not enough time to do it right
+		alert.runModal()
+		NSApplication.sharedApplication.terminate(nil)
 	end
 end
 

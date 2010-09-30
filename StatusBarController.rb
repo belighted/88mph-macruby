@@ -6,6 +6,7 @@ class StatusBarController
     
     menu = NSMenu.new
     @statusbar.setMenu menu
+
     App.model.projects.each { |project, current|
       menu_item = NSMenuItem.new.initWithTitle project, action: "select_project:", keyEquivalent: ''
       menu_item.setState NSOnState if current
