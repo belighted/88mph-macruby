@@ -3,7 +3,7 @@ class StatusBar
     statusbar = NSStatusBar.systemStatusBar
     @status_item = statusbar.statusItemWithLength NSVariableStatusItemLength
 
-	image = NSImage.imageNamed 'stretch'
+	image = NSImage.imageNamed 'menubar-icon'
 
     @status_item.setImage image
     @controller = StatusBarController.new
