@@ -3,7 +3,7 @@ class StatusBar
     statusbar = NSStatusBar.systemStatusBar
     @status_item = statusbar.statusItemWithLength NSVariableStatusItemLength
 
-    image = NSImage.new.initWithContentsOfFile "/Users/benoitdaloze/Documents/Xcode/EvenFaster88mph/stretch.tiff"
+	image = NSImage.imageNamed 'stretch'
 
     @status_item.setImage image
     @controller = StatusBarController.new
