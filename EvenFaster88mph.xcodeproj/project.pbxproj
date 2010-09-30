@@ -51,13 +51,13 @@
 		7868C5391187654100FF1C7E /* App.rb in Resources */ = {isa = PBXBuildFile; fileRef = 7868C5381187654100FF1C7E /* App.rb */; };
 		7868C53D1187664A00FF1C7E /* StatusBarController.rb in Resources */ = {isa = PBXBuildFile; fileRef = 7868C53C1187664A00FF1C7E /* StatusBarController.rb */; };
 		7868C53F1187669500FF1C7E /* StatusBar.rb in Resources */ = {isa = PBXBuildFile; fileRef = 7868C53E1187669500FF1C7E /* StatusBar.rb */; };
-		7868C54A1187670300FF1C7E /* stretch.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 7868C5491187670300FF1C7E /* stretch.tiff */; };
 		786D4C971182041A00D5DEFC /* PreferencesController.rb in Resources */ = {isa = PBXBuildFile; fileRef = 786D4C961182041A00D5DEFC /* PreferencesController.rb */; };
 		78B1B8861181DEB700BF48A5 /* AppController.rb in Resources */ = {isa = PBXBuildFile; fileRef = 78B1B8851181DEB700BF48A5 /* AppController.rb */; };
 		78C4CA471194519E00AA39CC /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78C4CA451194519E00AA39CC /* Preferences.xib */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		F4AA00D812547FE500CB07C9 /* menubar-icon.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F4AA00D712547FE500CB07C9 /* menubar-icon.tiff */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -89,12 +89,12 @@
 		7868C5381187654100FF1C7E /* App.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = App.rb; sourceTree = "<group>"; };
 		7868C53C1187664A00FF1C7E /* StatusBarController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = StatusBarController.rb; sourceTree = "<group>"; };
 		7868C53E1187669500FF1C7E /* StatusBar.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = StatusBar.rb; sourceTree = "<group>"; };
-		7868C5491187670300FF1C7E /* stretch.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = stretch.tiff; sourceTree = "<group>"; };
 		786D4C961182041A00D5DEFC /* PreferencesController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = PreferencesController.rb; sourceTree = "<group>"; };
 		78B1B8851181DEB700BF48A5 /* AppController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = AppController.rb; sourceTree = "<group>"; };
 		78C4CA461194519E00AA39CC /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Preferences.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* EvenFaster88mph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EvenFaster88mph.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4AA00D712547FE500CB07C9 /* menubar-icon.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "menubar-icon.tiff"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,8 +185,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F4AA00D712547FE500CB07C9 /* menubar-icon.tiff */,
 				78C4CA451194519E00AA39CC /* Preferences.xib */,
-				7868C5491187670300FF1C7E /* stretch.tiff */,
 				2BFA9DA510CDF852007972A1 /* MainMenu.xib */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
@@ -259,9 +259,9 @@
 				7868C5391187654100FF1C7E /* App.rb in Resources */,
 				7868C53D1187664A00FF1C7E /* StatusBarController.rb in Resources */,
 				7868C53F1187669500FF1C7E /* StatusBar.rb in Resources */,
-				7868C54A1187670300FF1C7E /* stretch.tiff in Resources */,
 				78C4CA471194519E00AA39CC /* Preferences.xib in Resources */,
 				7801F324119451FE00117B77 /* AppDelegate.rb in Resources */,
+				F4AA00D812547FE500CB07C9 /* menubar-icon.tiff in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
