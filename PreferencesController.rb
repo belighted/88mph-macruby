@@ -7,8 +7,8 @@ class PreferencesController < NSWindowController
 	
 	def awakeFromNib
 		puts "#{self.class} awoken!"
-		@user_input.stringValue = NSUserDefaults.standardUserDefaults['user']
-		@pass_input.stringValue = NSUserDefaults.standardUserDefaults['pass']
+		@user_input.stringValue = NSUserDefaults.standardUserDefaults['user'] || "john.doe@example.com"
+		@pass_input.stringValue = NSUserDefaults.standardUserDefaults['pass'] || "secret"
 	end
 	
 	def	ok_button_clicked(sender)
